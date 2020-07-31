@@ -1,3 +1,17 @@
 html, body {
     margin: 0;
+    background-image: url("img/bg_img.jpg");
+    
+    background-size: cover;
+}
+
+h1 {
+    color: #eae5e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.p-login, .p-register{
+    color: #eae5e1;
 }
