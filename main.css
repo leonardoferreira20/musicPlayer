@@ -5,13 +5,81 @@ html, body {
     background-size: cover;
 }
 
-h1 {
-    color: #eae5e1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 20px;
-    margin-left: 35px;
+
+header {
+    display: flex;
+    height: 10vh;
+    align-items: center;    
 }
 
-.p-login, .p-register{
+.logo-container, .nav-links, .account {
+    display: flex;
+}
+
+
+.logo {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#eae5e1;
+}
+
+.logo-container {
+    flex: 1;
+    margin-left: 4%;
+}
+
+.account {
+    flex: 1;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;      
+    margin-right: 5%; 
+}
+
+.account-login, .account-regist {
+    text-decoration: none;  
+}
+
+.account-login {
     color: #eae5e1;
+    margin-right: 30px;
+}
+
+.account-regist {
+    color: #eae5e1;  
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.principal-links {    
+    list-style: none;
+}
+
+.links {
+    margin-top: 12%;
+    margin-left: 18%;
+}
+
+.playlist {
+    margin-bottom: 2%;    
+}
+
+.a-playlist, .a-search {
+    text-decoration: none;    
+    color: #eae5e1; 
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.playlist-img, .search-img  {
+    width: 20;
+    height: 20;
+    margin-right: 10px;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+.playlist-img {    
+    margin-left: 5%;
 }
