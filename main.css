@@ -68,8 +68,35 @@ header {
 .a-playlist, .a-search {
     text-decoration: none;    
     color: #eae5e1; 
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif;   
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif; 
+    border: none;  
+    background-color: transparent;
+    padding: 5px;
+    letter-spacing: 1px;
+
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.a-playlist:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #eae5e1;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.a-playlist:hover::before {
+    right: 0;
 }
 
 .playlist-img, .search-img  {
